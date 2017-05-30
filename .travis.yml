@@ -9,7 +9,7 @@ compiler:
 
 before_install:
   - brew tap homebrew/science
-  - brew install insighttoolkit
+  - brew install insighttoolkit --with-gdcm --build-from-source
   
 before_script:
     - mkdir build
