@@ -1,12 +1,15 @@
 language: cpp
 
+os:
+    - osx
+    
 compiler:  
     - gcc
     - clang
 
 before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y libinsighttoolkit4.10
+  - brew update
+  - brew install insighttoolkit
   
 before_script:
     - mkdir build
