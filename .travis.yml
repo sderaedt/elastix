@@ -8,7 +8,7 @@ compiler:
     - clang
 
 before_install:
-  - brew update
+  - brew tap homebrew/science
   - brew install insighttoolkit
   
 before_script:
