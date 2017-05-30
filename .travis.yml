@@ -7,12 +7,11 @@ compiler:
     - clang
 
 before_install:
-  - brew tap homebrew/science
-  - brew install -v insighttoolkit --with-gdcm
+  - brew install vtk insighttoolkit
   
 before_script:
     - mkdir build
     - cd build
     - cmake ../src
 
-script: make  
+script: make
