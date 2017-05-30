@@ -6,7 +6,7 @@ compiler:
 
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y libinsighttoolkit4-dev
+  - sudo apt-get install -y libinsighttoolkit4.10
   
 before_script:
     - mkdir build
