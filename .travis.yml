@@ -3,13 +3,12 @@ language: cpp
 os:
     - osx
     
-compiler:  
-    - gcc
+compiler:
     - clang
 
 before_install:
   - brew tap homebrew/science
-  - brew install insighttoolkit --with-gdcm --build-from-source
+  - brew install -v insighttoolkit --with-gdcm
   
 before_script:
     - mkdir build
